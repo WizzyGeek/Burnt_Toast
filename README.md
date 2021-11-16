@@ -13,6 +13,7 @@ python implementation has been provided.
 
 ### Glossary
  - element
+
    bistated data with position
 
 ### Operation
@@ -57,7 +58,7 @@ python implementation has been provided.
 - perform `flip(n)` on array
 - check if array is back to the original, with each element back to it's original position
    - if yes, return number of iterations
-   - n = n + 1 / x
+   - n = n + 1 % x
 
 ## The Conjecture
 
