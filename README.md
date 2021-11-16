@@ -13,6 +13,7 @@ python implementation has been provided.
 
 ### Glossary
  - element
+
    bistated data with position
 
 ### Operation
