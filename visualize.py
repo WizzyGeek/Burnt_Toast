@@ -69,7 +69,7 @@ def greater_reader(fn: str, sep: str = " ") -> tuple[list[int], list[float]]:
     return x, y
 
 if __name__ == "__main__":
-    data = greater_reader("data.txt")
+    data = reader("ret.txt")
     bar(data[0], data[1], width=1, align="edge")
     savefig("plot.png")
     show()

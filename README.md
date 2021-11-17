@@ -2,6 +2,8 @@
     Burnt Toast Conjecture
 </h1>
 
+*solved*
+
 ## Introduction
 
 The burnt toast problem deals with certain states of an ordered array
@@ -58,7 +60,7 @@ python implementation has been provided.
 - perform `flip(n)` on array
 - check if array is back to the original, with each element back to it's original position
    - if yes, return number of iterations
-   - n = n + 1 % x
+   - `n = (n % x) + 1`
 
 ## The Conjecture
 
@@ -76,6 +78,8 @@ state"
 
 ## The Original Problem
 
+*solved*
+
 Find an algebraic expression for the problem which accepts input and
 gives the answer that is, the number iterations it takes to return to the original
 state of the array. This goal was not achieved due to the randomness of the data.
@@ -92,7 +96,7 @@ flip operation
 
 ## Implementation
 
-Thanks to martian17 for optimisations for computing 2021 values
+Thanks to martian17 for optimisations for computing 2021 values for previous version
 https://github.com/martian17/Burned_Toast_Conjecture
 
 #### Contact
