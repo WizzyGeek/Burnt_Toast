@@ -98,7 +98,3 @@ flip operation
 
 Thanks to martian17 for optimisations for computing 2021 values for previous version
 https://github.com/martian17/Burned_Toast_Conjecture
-
-#### Contact
-
-Proofs and discussions can followed up at <ojasscoding@gmail.com>
