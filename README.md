@@ -2,7 +2,7 @@
     Burnt Toast Conjecture
 </h1>
 
-*solved*
+*solved* relates to https://oeis.org/A002326
 
 ## Introduction
 
