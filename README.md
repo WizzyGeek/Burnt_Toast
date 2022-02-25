@@ -22,6 +22,9 @@ python implementation has been provided.
 - `flip(n)`
 
     take the first n elements change their state and prepend in reverse order
+    
+    That is we first take the first N elements in array
+    Then we flip their states
 
     #### Example
 
@@ -49,6 +52,17 @@ python implementation has been provided.
         // 3rd element went to 1st, 1st went to 3rd,
         // 2nd remained at 2nd since it was the pivot
         ```
+        
+    3. `flip(3)` alternative illustraion
+       
+        ```
+        array = [(0, True), (1, True), (2, True), (3, True)]
+        // first step
+        array = [(0, False), (1, False), (2, False), (3,True)] // first 3 elements are pointing down
+        // 2nd step, reversing the first three elements
+        // python: array[0:3] = reverse(array[0:3])
+        array = [(2, False), (1, False), (0, False), (3, True)]
+        ```
 
 ### Setup
 - make an array
@@ -58,9 +72,9 @@ python implementation has been provided.
 - let n = 1
 - start loop
 - perform `flip(n)` on array
-- check if array is back to the original, with each element back to it's original position
+- check if array is back to the original, with each element back to it's original position and state.
    - if yes, return number of iterations
-   - `n = (n % x) + 1`
+   - else `n = (n % x) + 1`, where x is array length.
 
 ## The Conjecture
 
@@ -70,7 +84,7 @@ The conjecture that was established after checking 2021 values is that.
 > paramaterized flip operations the array returns to the initial state.
 
 where "cyclically paramaterized flip operations" refers to
-`flip(iteration % array_size)` applied every iteration.
+`flip(iteration % array_size + 1)` applied every iteration.
 
 To extend this trivially, "this set of ordered operations can be applied
 to every array of the same or greater size to return the array to it's initial
